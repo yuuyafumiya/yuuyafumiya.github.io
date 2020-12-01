@@ -92,14 +92,28 @@ li span {
 }
 
 @media (max-width: 700px) {
-  .logo {
-    min-width: 60px;
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
 
-    margin: 2px 0 0 2px;
+  .logo {
+    min-width: 80px;
+    margin: 4px 0 0 12px;
+    position: static;
+  }
+
+  p a {
+    font-size: 16px;
+    margin-right: 20px;
   }
 
   h2 {
     font-size: 14px;
+  }
+
+  .inu {
+    margin-top: 12px;
   }
 
   ul {
@@ -116,7 +130,7 @@ li span {
     font-size: 10px;
   }
 
-  p a {
-    font-size: 12px;
+  i {
+    vertical-align: bottom;
   }
 }
