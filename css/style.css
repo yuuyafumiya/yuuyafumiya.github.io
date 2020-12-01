@@ -129,11 +129,4 @@ li span {
   p {
     font-size: 10px;
   }
-
-  .memo {
-    position: relative;
-  }
-  i {
-    vertical-align: bottom;
-  }
 }
