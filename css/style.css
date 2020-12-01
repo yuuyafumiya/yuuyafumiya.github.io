@@ -12,15 +12,40 @@ body {
   background-color: #303030;
 }
 
+header {
+  display: flex;
+}
+
+.github-link {
+  margin: 8px auto 2px;
+}
+
+p a {
+  font-size: 25px;
+}
+
 a:hover {
   opacity: 0.8;
 }
 
-img {
-  max-width: 30%;
-  height: auto;
-  margin-top: 0;
+h2 {
   margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 10%;
+  position: absolute;
+  padding: 6px 10px;
+  display: block;
+}
+
+h1 a {
+  margin: 10px auto;
+}
+
+.inu {
+  width: 30%;
+  margin-top: 10px;
 }
 
 .container {
@@ -33,53 +58,63 @@ img {
 ul {
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 20px 40px 40px;
-  position: relative;
+  list-style-type: none;
+  margin-bottom: 6px;
 }
 
 li {
-  width: 100%;
-  padding: 30px 0;
-  margin: 4px;
+  min-width: 18%;
+  border: 1px gray solid;
   display: block;
-  font-size: 20px;
-  border: 1px solid gray;
-  box-shadow: 2px 2px 4px -1px gray;
+  padding-bottom: 25px;
+  padding: 0; /* liのpadding:0; にして、aのpaddingだけつけるとピッタリ一致する。 */
+  margin: 0 8px;
+  box-shadow: 2px 2px gray;
 }
 
 li a {
-  vertical-align: middle;
-  text-decoration: none;
+  display: block;
+  padding: 20px 0; /* liのpadding:0; にして、aのpaddingだけつけるとピッタリ一致する。 */
 }
 
-p {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+a:hover {
+  opacity: 0.8;
+  background-color: hsl(61, 100%, 80%);
+}
+
+li span {
+  display: block;
+  padding: 20px 0;
+}
+
+.memo {
+  padding-bottom: 8px;
 }
 
 @media (max-width: 800px) {
-  h1 {
-    font-size: 16px;
+  .logo {
+    max-width: 12%;
+  }
+
+  h2 {
+    font-size: 14px;
   }
 
   ul {
     display: block;
-    padding: 10px 40px 40px;
+    padding: 0 40px 0px;
   }
 
   li {
     width: 80%;
-    margin: 0 auto;
+    margin: 8px auto;
   }
 
   p {
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 10px;
+  }
+
+  p a {
+    font-size: 16px;
   }
 }
