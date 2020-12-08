@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Web APIを使用した位置データからの天気予報</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/special.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Web APIを使って天気予報を表示</h1>
+        <h2>
+          位置情報（緯度/経度）からデータを取得（OpenWeatherAPI使用）
+          ※誤差大き目です。。
+        </h2>
+      </div>
+      <!-- /.container -->
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <h3 id="place"></h3>
+          <div id="now">
+            <div id="weather"></div>
+          </div>
+          <table id="forecast"></table>
+        </section>
+      </div>
+      <!-- /.container -->
+    </main>
+    <footer>
+      <div class="container">
+        <p>JavaScript Samples</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
